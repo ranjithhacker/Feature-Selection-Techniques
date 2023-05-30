@@ -2,11 +2,11 @@
 ## AIM
 To Perform the various feature selection techniques on a dataset and save the data to a file. 
 
-## Explanation
+# Explanation
 Feature selection is to find the best set of features that allows one to build useful models.
 Selecting the best features helps the model to perform well. 
 
-## ALGORITHM
+# ALGORITHM
 ### STEP 1
 Read the given Data
 ### STEP 2
@@ -16,12 +16,10 @@ Apply Feature selection techniques to all the features of the data set
 ### STEP 4
 Save the data to the file
 
-## CODE
-
-### Developed by: AKASH A
-### Register Number: 212221230003
-
+# CODE
 ```
+Program Developed By: Gokul Nath A
+Register number:212220220013
 from sklearn.datasets import load_boston
 boston_data=load_boston()
 import pandas as pd
@@ -131,42 +129,36 @@ X = boston.drop(columns='MEDV')[['CRIM','RM','PTRATIO','LSTAT']]
 y_pred = cross_val_predict(classifier_pipeline, X, y, cv=cv)
 print("RMSE: " + str(round(sqrt(mean_squared_error(y,y_pred)),3)))
 print("R_squared: " + str(round(r2_score(y,y_pred),3)))
-
 ```
 
-## OUTPUT
-![OUTPUT](./1.png)
 
-![OUTPUT](./2.png)
+# OUPUT
+![image](https://user-images.githubusercontent.com/94505585/170406591-47feac04-6cc9-4892-b5c3-433f1d8d50bb.png)
+![image](https://user-images.githubusercontent.com/94505585/170406697-6a97d8fd-b310-4352-a30a-c1adfc4a0bcb.png)
+![image](https://user-images.githubusercontent.com/94505585/170406735-a7d9e5a9-c2fa-4879-ac98-26abb47d0ee4.png)
+![image](https://user-images.githubusercontent.com/94505585/170406761-e9529da2-9b56-4590-bb4f-6d52cf94af8b.png)
+![image](https://user-images.githubusercontent.com/94505585/170406784-a6c8952a-a730-477e-9415-a8e3409866fc.png)
+![image](https://user-images.githubusercontent.com/94505585/170406804-8adcb545-9eb2-47f4-a344-c444b038c0a5.png)
+![image](https://user-images.githubusercontent.com/94505585/170406816-235fd4c5-f4f9-4cc7-9054-c284c6925144.png)
+![image](https://user-images.githubusercontent.com/94505585/170406839-a4534b51-9a1f-4628-90ba-38393d30e65f.png)
+![image](https://user-images.githubusercontent.com/94505585/170406858-b2d8e732-8d3a-4284-8e65-9737d5badc74.png)
+![image](https://user-images.githubusercontent.com/94505585/170406874-74641eeb-e3e5-45c4-bc29-9b13309261e0.png)
+![image](https://user-images.githubusercontent.com/94505585/170406890-c590bde6-d009-47ad-9a3d-2ec4f3c16781.png)
+![image](https://user-images.githubusercontent.com/94505585/170406901-b9ab21e5-11ed-4ccb-9f7a-3ef0aaa5dd62.png)
+![image](https://user-images.githubusercontent.com/94505585/170406920-1ed23c3b-fd72-41fb-a5e4-6caf586b9620.png)
+![image](https://user-images.githubusercontent.com/94505585/170406931-60102e9b-3b65-4466-b683-f5941fe113b3.png)
+![image](https://user-images.githubusercontent.com/94505585/170406949-019df07e-1ef1-49fd-880a-6b84c914d1bf.png)
+![image](https://user-images.githubusercontent.com/94505585/170406966-4fafb6f2-64b9-4b47-84ef-b532d498f145.png)
 
-![OUTPUT](./3.png)
+### RESULT
+The various feature selection techniques has been performed on a dataset and saved the data to a file.
 
-![OUTPUT](./4.png)
 
-![OUTPUT](./5.png)
 
-![OUTPUT](./6.png)
 
-![OUTPUT](./7.png)
 
-![OUTPUT](./8.png)
 
-![OUTPUT](./9.png)
 
-![OUTPUT](./10.png)
 
-![OUTPUT](./11.png)
 
-![OUTPUT](./12.png)
-
-![OUTPUT](./13.png)
-
-![OUTPUT](./14.png)
-
-![OUTPUT](./15.png)
-
-![OUTPUT](./16.png)
-
-## RESULT
-The various feature selection techniques has been performed on a dataset and saved the data to a file. 
 
